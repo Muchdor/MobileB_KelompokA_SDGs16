@@ -6,6 +6,7 @@ nah aplikasi ini udah tersambung ke kantor polisi langsung.. jadi kayak kantor p
 jadi saat ada yg lapor itu laporannya langsung masuk kantor polisi terdekat, maksudnya terdekat dari pelapor.
 nah nantinya si polisi akan men acc laporan tersebut.
 di sini ada fitur:
+
 -sign in: daftar akun. ini yg d buat daftar itu data diri..
 -log in: masuk ke aplikasi
 -log out: keluar
