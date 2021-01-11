@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_app/isimenu.dart';
+import 'package:mobile_app/hasilmenu.dart';
 import 'package:mobile_app/router.dart';
 
-class MenuPage extends StatefulWidget {
+class IsiMenu extends StatefulWidget {
   @override
-  _MenuPageState createState() => _MenuPageState();
+  _IsiMenuState createState() => _IsiMenuState();
 }
 
-class _MenuPageState extends State<MenuPage> {
+class _IsiMenuState extends State<IsiMenu> {
   @override
   Widget build(BuildContext context) {
     final loginButton = Padding(
@@ -17,7 +17,7 @@ class _MenuPageState extends State<MenuPage> {
           borderRadius: BorderRadius.circular(24),
         ),
         onPressed: () {
-          Router.changePage(context, IsiMenu());
+          Router.changePage(context, HasilMenu());
         },
         padding: EdgeInsets.all(12),
         color: Colors.lightBlueAccent,
@@ -30,22 +30,21 @@ class _MenuPageState extends State<MenuPage> {
         title: const Text('ZeroCrime'),
       ),
       body: Center(
-        child: ListView(
+        child : ListView(
           shrinkWrap: true,
           padding: const EdgeInsets.all(20.0),
           children: <Widget>[
+            TextField(
+              decoration: InputDecoration(
+                border: InputBorder.none,
+                hintText: 'Enter a search term'
+              ),
+            ),
+            SizedBox(height : 50.0),
             loginButton,
-            
           ],
-          // 'Coming Soon',
-          // style: TextStyle(
-          //   color: Colors.black,
-          //   fontSize: 50,
-          //   ),
-        ),
+        )
       ),
     );
-  
-  
   }
 }
