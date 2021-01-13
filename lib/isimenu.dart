@@ -37,7 +37,7 @@ class _IsiMenuState extends State<IsiMenu> {
             TextField(
               decoration: InputDecoration(
                 border: InputBorder.none,
-                hintText: 'Enter a search term'
+                hintText: 'Tulis Laporan Disini'
               ),
             ),
             SizedBox(height : 50.0),
